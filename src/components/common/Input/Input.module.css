@@ -1,0 +1,71 @@
+/* src/components/common/Input/Input.module.css */
+.container {
+  margin-bottom: 16px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+.error {
+  border-color: var(--error-color);
+}
+
+.error:focus {
+  border-color: var(--error-color);
+  box-shadow: 0 0 0 2px rgba(245, 101, 101, 0.2);
+}
+
+.errorMessage {
+  margin-top: 4px;
+  color: var(--error-color);
+  font-size: 0.875rem;
+}
+
+.startIcon {
+  position: absolute;
+  left: 12px;
+  color: var(--text-secondary);
+}
+
+.endIcon {
+  position: absolute;
+  right: 12px;
+  color: var(--text-secondary);
+}
+
+.withStartIcon {
+  padding-left: 40px;
+}
+
+.withEndIcon {
+  padding-right: 40px;
+}

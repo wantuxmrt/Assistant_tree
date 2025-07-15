@@ -1,0 +1,57 @@
+/* src/components/common/Card/Card.module.css */
+.card {
+  background-color: var(--background-paper);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.none {
+  box-shadow: none;
+}
+
+.low {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.medium {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.high {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.padding_none {
+  padding: 0;
+}
+
+.padding_small {
+  padding: 12px;
+}
+
+.padding_medium {
+  padding: 16px;
+}
+
+.padding_large {
+  padding: 24px;
+}
+
+.borderRadius_none {
+  border-radius: 0;
+}
+
+.borderRadius_small {
+  border-radius: 4px;
+}
+
+.borderRadius_medium {
+  border-radius: 8px;
+}
+
+.borderRadius_large {
+  border-radius: 12px;
+}

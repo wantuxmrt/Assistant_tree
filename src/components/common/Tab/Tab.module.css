@@ -1,0 +1,34 @@
+/* src/components/common/Tab/Tab.module.css */
+.tab {
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.tab:hover:not(.disabled) {
+  color: var(--text-primary);
+  background-color: var(--background-hover);
+}
+
+.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.icon {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
